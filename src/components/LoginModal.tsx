@@ -1,4 +1,4 @@
-import { FormEvent } from 'react'
+import { type FormEvent } from 'react'
 import type { DemoUser } from '../types'
 import { demoUsers } from '../mockData'
 import './Modal.css'

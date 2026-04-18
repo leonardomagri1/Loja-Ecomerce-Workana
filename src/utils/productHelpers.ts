@@ -1,5 +1,5 @@
 import type { Product, Order } from '../types'
-import { formatCurrency, formatDate, buildInstallmentsLabel } from './formatters'
+import { formatDate, buildInstallmentsLabel } from './formatters'
 import {
   toFiniteNumber,
   safeString,

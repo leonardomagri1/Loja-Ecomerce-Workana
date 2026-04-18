@@ -1,16 +1,9 @@
 import type {
-  AccentTone,
   Address,
   DemoUser,
   Order,
-  OrderItem,
-  OrderStatus,
   PaymentMethod,
   Product,
-  ProductSpec,
-  ProductStatus,
-  TrackingStep,
-  UserRole,
 } from './types'
 
 

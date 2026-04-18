@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import { FormEvent } from 'react'
+import { type FormEvent } from 'react'
 import type { DemoUser } from '../types'
 import { getFirstName } from '../utils/formatters'
 import './Header.css'

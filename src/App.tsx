@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, FormEvent } from 'react'
+import { useState, useEffect, useMemo, type FormEvent } from 'react'
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom'
 
 // Types
@@ -10,8 +10,6 @@ import {
   type CartEntry,
   type ProductDraft,
   type LoginIntent,
-  type PaymentMethod,
-  type Address,
   type ProductSalesEntry,
 } from './types'
 
