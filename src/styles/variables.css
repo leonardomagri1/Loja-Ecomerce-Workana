@@ -1,0 +1,33 @@
+:root {
+  /* Colors - Premium Palette */
+  --bg-main: #fffaf6;
+  --bg-card: rgba(255, 255, 255, 0.76);
+  --ink: #14110f;
+  --muted: rgba(20, 17, 15, 0.58);
+  --accent-peach: #ff8d71;
+  --accent-cyan: #47c2d5;
+  --accent-gold: #f6bf4f;
+  --accent-berry: #8d2840;
+  
+  --shadow-sm: 0 4px 12px rgba(20, 17, 15, 0.04);
+  --shadow-md: 0 12px 32px rgba(20, 17, 15, 0.08);
+  --shadow-lg: 0 24px 48px rgba(20, 17, 15, 0.12);
+  
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-full: 999px;
+  
+  --container: 1400px;
+  --header-height: 80px;
+  
+  /* Typography */
+  --font-main: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Syne', sans-serif;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container: calc(100vw - 32px);
+  }
+}

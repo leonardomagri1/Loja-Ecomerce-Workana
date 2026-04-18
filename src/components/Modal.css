@@ -1,0 +1,200 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 17, 15, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-card {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  animation: slideUp 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.modal-card--editor {
+  max-width: 800px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  colore: var(--ink);
+}
+
+.modal-card__header h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-top: 8px;
+  color: var(--ink);
+}
+
+.modal-reason {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  height: 52px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(20, 17, 15, 0.1);
+  background: #fdfdfd;
+  font-size: 0.95rem;
+}
+
+.form-group textarea {
+  height: auto;
+  padding: 16px;
+  resize: vertical;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.form-error {
+  color: var(--accent-berry);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.quick-access {
+  border-top: 1px solid rgba(20, 17, 15, 0.05);
+  padding-top: 32px;
+}
+
+.quick-access__title {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.quick-access__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.quick-access__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(20, 17, 15, 0.05);
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.quick-access__card:hover {
+  background: #f0f0f0;
+  border-color: rgba(20, 17, 15, 0.1);
+}
+
+.quick-access__card strong {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.quick-access__card span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Editor Form Specifics */
+.editor-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group-full {
+  grid-column: span 2;
+}
+
+.editor-form__checkbox {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.editor-form__checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.editor-form__actions {
+  grid-column: span 2;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
